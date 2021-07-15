@@ -141,14 +141,21 @@ h3{
     flex-wrap:wrap;
 }
 
+.listing article{
+    box-shadow:  0px 0px 20px -10px #9B9898;
+    margin: 10px;
+    border-radius: 25px;
+}
 
 .logement img{
-    max-width:200px;
-    max-height:200px;
+    width:300px;
+    height:150px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border:5px solid #fff;
-    background-position: center top;
+    object-fit: cover;
+    
+    
 }
 .logement figcaption{
     background-color:#fff;
@@ -157,6 +164,7 @@ h3{
     line-height:7px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    
 }
 
 
