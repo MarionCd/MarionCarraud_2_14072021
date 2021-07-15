@@ -126,17 +126,23 @@ h3{
 
 #liste-hebergements{
     display:flex;
+    flex-wrap:wrap; 
+    justify-content: space-around;
+    
 }
+
+#liste-hebergements aside, .logement{
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding:10px 20px;
+}
+
 
 .logement{
-    background-color:#F2F2F2;
-    min-width:70%;
-    border-radius:25px;
-    padding:30px;
-    margin-right:20px;
+    width:70%;
 }
 
-.logement .listing{
+.listing{
     display:flex;
     flex-wrap:wrap;
 }
@@ -147,27 +153,72 @@ h3{
     border-radius: 25px;
 }
 
+.prix{
+    color:#000;
+    font-weight: 500;
+}
+
 .logement img{
     width:300px;
     height:150px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border:5px solid #fff;
-    object-fit: cover;
-    
-    
-}
-.logement figcaption{
-    background-color:#fff;
-    margin-top:-16px;
-    padding:11px;
-    line-height:7px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    
+    object-fit: cover;    
 }
 
+.logement h2{
+    line-height:5px;
+}
+
+.logement .prix{
+    padding-bottom:7px;
+}
+
+.logement figcaption, #liste-hebergements aside figcaption{
+    background-color:#fff; 
+}
+.logement figcaption{
+    margin-top:-16px;
+    padding:11px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 
 .etoiles .gris{
     color:#F2F2F2
+}
+
+#liste-hebergements aside{
+    width:20%;
+}
+
+#liste-hebergements aside article{
+    display:flex;
+
+}
+
+#liste-hebergements aside article h2{
+    margin-bottom:10px;
+}
+
+#liste-hebergements aside img{
+    width:120px;
+    height:130px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border:5px solid #fff;
+    object-fit:cover;
+    object-position:bottom center;  
+}
+
+#liste-hebergements aside figcaption{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px; 
+    position:relative;
+}
+
+aside .etoiles{
+    position:absolute;
+    bottom:10px;
 }
