@@ -218,24 +218,36 @@ h3{
     width:20%;
 }
 
-#liste-hebergements aside article{
+#liste-hebergements aside .suggestion{
     display:flex;
     flex:auto;
+    margin-bottom:20px;
 }
 
-#liste-hebergements aside article h2{
-    margin-bottom:10px;
-}
-
-#liste-hebergements aside img{
+.cadre{
     width:150px;
     height:130px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border:5px solid #fff;
-    object-fit:cover;
-    object-position:bottom center;  
 }
+
+.image1, .image2, .image3{
+    background-size:cover;
+    background-position: bottom center;
+}
+.image1{
+    background-image: url('images/hebergements/4_small/Hotel_le_soleil_du_matin.jpg');
+}
+ 
+.image2{
+    background-image:url('images/hebergements/4_small/Au_coeur_de_l_eau.jpg');
+}
+
+.image3{
+    background-image: url('images/hebergements/4_small/Hotel_tout_bleu_tout_blanc.jpg');
+}
+
 
 #liste-hebergements aside figcaption{
     border-bottom-right-radius: 25px;
@@ -243,6 +255,7 @@ h3{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width:50%;
 }
 #liste-hebergements aside figcaption .etoiles{
     margin-bottom:5px;
