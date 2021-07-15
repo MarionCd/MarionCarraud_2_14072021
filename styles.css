@@ -8,6 +8,7 @@ body{
     padding-left:30px;
     padding-right:30px;
     background-color:#fff;
+    margin:0 auto;
 }
 
 h2, h3{
@@ -30,12 +31,27 @@ nav a{
     text-decoration:none;
     color: #000;
     border-top:2px solid #fff;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 nav a:hover{
     color:#0065fc;
     border-top:2px solid #0065FC;
 }
+.inscription:hover{
+    border-top:2px solid #fff;
+}
+
+nav a h2{
+    font-weight:500;
+}
+
+.inscription h2{
+    font-weight:bold;
+    color:#0065FC;
+}
+
 
 h1{
     font-weight:bold;
@@ -91,23 +107,24 @@ h3{
     margin-right:30px;
 }
 
-.filtres button{
-    margin:0px 20px;
+.filtres .choix{
     border:3px solid #F2F2F2;
     background-color: #fff;
     border-radius:25px;
-    font-family:'raleway', sans-serif;
     font-weight: bold;
+    display:flex;
+    margin-right:13px;
+}
+
+.filtres .titre-filtre{
+    margin:10px 20px 0px 5px;
 }
 
 .filtres i{
-    margin-right:8px;
     border-radius:50%;
     background-color:#DEEBFF ;
     color:#0065FC;
-    padding:10px;
-    position:relative;
-    margin-left:-13px;
+    padding:12px;
 }
 
 .nb-logement{
@@ -142,12 +159,17 @@ h3{
     width:70%;
 }
 
+.logement h2 a{
+    text-decoration:none;
+    color:#000;
+}
+
 .listing{
     display:flex;
     flex-wrap:wrap;
 }
 
-.listing article{
+.listing article, .listing figure{
     box-shadow:  0px 0px 20px -10px #9B9898;
     margin: 10px;
     border-radius: 25px;
@@ -158,11 +180,14 @@ h3{
     font-weight: 500;
 }
 
+#activites .listing img, .logement img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
 .logement img{
     width:300px;
     height:150px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
     border:5px solid #fff;
     object-fit: cover;    
 }
@@ -175,10 +200,10 @@ h3{
     padding-bottom:7px;
 }
 
-.logement figcaption, #liste-hebergements aside figcaption{
+.logement figcaption, #liste-hebergements aside figcaption, #activites .listing figcaption{
     background-color:#fff; 
 }
-.logement figcaption{
+.logement figcaption, #activites .listing figcaption{
     margin-top:-16px;
     padding:11px;
     border-bottom-left-radius: 25px;
@@ -195,7 +220,7 @@ h3{
 
 #liste-hebergements aside article{
     display:flex;
-
+    flex:auto;
 }
 
 #liste-hebergements aside article h2{
@@ -203,7 +228,7 @@ h3{
 }
 
 #liste-hebergements aside img{
-    width:120px;
+    width:150px;
     height:130px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -215,10 +240,23 @@ h3{
 #liste-hebergements aside figcaption{
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px; 
-    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#liste-hebergements aside figcaption .etoiles{
+    margin-bottom:5px;
 }
 
-aside .etoiles{
-    position:absolute;
-    bottom:10px;
+.populaires{
+    display:flex;
+    justify-content: space-between;
+}
+
+#activites .listing figure{
+    max-width:25%;
+}
+
+#activites .listing figure img{
+    object-fit:fill;
 }
