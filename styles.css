@@ -1,3 +1,165 @@
+@font-face {font-family: "raleway"; src: url('../PremierProjet/Raleway/Raleway-VariableFont_wght.ttf'); }
+
+body{
+    color:#0065FC;
+    font-family:'raleway', sans-serif;
+    font-size:15px;
+    font-weight: lighter;
+    padding-left:30px;
+    padding-right:30px;
+    background-color:#fff;
+}
+
+h2, h3{
+    font-weight: 500;
+}
+nav{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.logo:nth-child(1){
+    left: 0;
+    position:absolute;
+    margin:20px 10px;
+    padding-left:30px;
+}
+
+nav a{
+    margin:20px 50px;
+    text-decoration:none;
+    color: #000;
+    border-top:2px solid #fff;
+}
+
+nav a:hover{
+    color:#0065fc;
+    border-top:2px solid #0065FC;
+}
+
 h1{
-    color:red;
+    font-weight:bold;
+    font-size:20px;
+    color:#000000;
+}
+
+h2{
+    color:#000;
+    font-weight: bold;
+    font-size:15px;
+}
+
+h3{
+    color:#000;
+}
+
+.icone-map{
+    color:#000;
+    padding:10px;
+    background-color:  #F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.barre-recherche .champ{
+    color:#000;
+    font-weight: bold;
+    padding:10px;
+    border:1px solid #F2F2F2;
+    font-family:'raleway', sans-serif;
+}
+
+.barre-recherche button{
+    padding:10px;
+    background-color:#0065fc;
+    color:#fff;
+    font-weight:600;
+    font-family:'raleway', sans-serif;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:none;
+    cursor:pointer;
+}
+
+.filtres{
+    display:flex;
+    margin-top:30px;
+}
+
+.filtres h2{
+    margin-right:30px;
+}
+
+.filtres button{
+    margin:0px 20px;
+    border:3px solid #F2F2F2;
+    background-color: #fff;
+    border-radius:25px;
+    font-family:'raleway', sans-serif;
+    font-weight: bold;
+}
+
+.filtres i{
+    margin-right:8px;
+    border-radius:50%;
+    background-color:#DEEBFF ;
+    color:#0065FC;
+    padding:10px;
+    position:relative;
+    margin-left:-13px;
+}
+
+.nb-logement{
+    color:#000;
+    font-weight: 500;
+    margin:20px 0px 20px 0px;
+}
+.nb-logement i{
+    border:2px solid #F2F2F2;
+    margin-right:10px;
+    border-radius:50%;
+    font-size:12px;
+    color:#0065FC;
+    padding:5px 9px;
+}
+
+#liste-hebergements{
+    display:flex;
+}
+
+.logement{
+    background-color:#F2F2F2;
+    min-width:70%;
+    border-radius:25px;
+    padding:30px;
+    margin-right:20px;
+}
+
+.logement .listing{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.logement img{
+    max-width:200px;
+    max-height:200px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border:5px solid #fff;
+    background-position: center top;
+}
+.logement figcaption{
+    background-color:#fff;
+    margin-top:-16px;
+    padding:11px;
+    line-height:7px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+.etoiles .gris{
+    color:#F2F2F2
 }
