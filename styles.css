@@ -194,7 +194,9 @@ h3{
 }
 
 .logement h2{
-    line-height:5px;
+    line-height:5px;   
+}
+.marseille {
     margin-left:20px;
 }
 
@@ -358,4 +360,8 @@ footer a{
 
 footer .marge{
     width:20%;
+}
+
+#liste-hebergements a, #galerie a{
+    text-decoration:none;
 }
