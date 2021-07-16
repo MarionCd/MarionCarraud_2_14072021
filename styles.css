@@ -37,7 +37,24 @@ nav a{
 
 nav a:hover{
     color:#0065fc;
-    border-top:2px solid #0065FC;
+ 
+}
+
+nav a::before{
+transform: scaleX(0);
+height: 2px;
+content: '';
+border-radius: 20px;
+background-color: #0065FC;
+display: block;
+width:150%;
+margin-left:-25%;
+}
+
+nav a:hover::before{
+    
+    transform: scaleX(1);
+    transition: transform 2000ms;
 }
 .inscription:hover{
     border-top:2px solid #fff;
