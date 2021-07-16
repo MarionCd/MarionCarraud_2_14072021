@@ -18,31 +18,33 @@
     </header>
 
 <!---------------------------------------------Barre de recherche et filtres ------------------------------------------------------->
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <h3>En plein centre ville ou en pleine nature</h3>
-    <div class="barre-recherche">
-        <label for="recherche" class="icone-map"><i class="fas fa-map-marker-alt"></i></label><input type="text" id="recherche" class="champ"><button for="recherche">Rechercher</button>
-    </div>
-    <div class="filtres">
-        <h2>Filtres</h2>
-        <div class="choix">
-            <div><i class="fas fa-money-bill-wave icone-filtre"></i></div>
-            <div class="titre-filtre">Économique</div>
+    <section id="recherche">    
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h3>En plein centre ville ou en pleine nature</h3>
+        <div class="barre-recherche">
+            <label for="recherche" class="icone-map"><i class="fas fa-map-marker-alt"></i></label><input type="text" id="recherche" class="champ"><button for="recherche">Rechercher</button>
         </div>
-        <div class="choix">
-            <div><i class="fas fa-child icone-filtre"></i></div>
-            <div class="titre-filtre">Familial</div>
+        <div class="filtres">
+            <h2>Filtres</h2>
+            <div class="choix">
+                <div><i class="fas fa-money-bill-wave icone-filtre"></i></div>
+                <div class="titre-filtre">Économique</div>
+            </div>
+            <div class="choix">
+                <div><i class="fas fa-child icone-filtre"></i></div>
+                <div class="titre-filtre">Familial</div>
+            </div>
+            <div class="choix">
+                <div><i class="fas fa-heart icone-filtre"></i></div>
+                <div class="titre-filtre">Romantique</div>
+            </div>
+            <div class="choix">
+                <div><i class="fas fa-dog icone-filtre"></i></div>
+                <div class="titre-filtre">Animaux acceptés</div>
+            </div>
         </div>
-        <div class="choix">
-            <div><i class="fas fa-heart icone-filtre"></i></div>
-            <div class="titre-filtre">Romantique</div>
-        </div>
-        <div class="choix">
-            <div><i class="fas fa-dog icone-filtre"></i></div>
-            <div class="titre-filtre">Animaux acceptés</div>
-        </div>
-    </div>
-    <div class="nb-logement"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
+        <div class="nb-logement"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
+    </section>
 
 <!---------------------------------------------Liste des hébergements------------------------------------------------------->
     <section id="liste-hebergements">
@@ -142,60 +144,71 @@
         </aside>
     </section>
 
-<!---------------------------------------------Liste des activités (galerie)------------------------------------------------------->
-    <section id="activites">
-        <div class="listing">
-            <h2>Activités à Marseille</h2>
-            <figure>
-                <img src="images/activites/4_small/Vieux_port.jpg" alt="Le vieux port">
-                <figcaption><h2>Vieux port</h2></figcaption>
-            </figure>
-            <figure>
-                <img src="images/activites/4_small/Fort_de_Pomegues.jpg" alt="Fort de Pomègues">
-                <figcaption><h2>Fort de Pomègues</h2></figcaption>
-            </figure>
-            <figure>
-                <img src="images/activites/4_small/Iles_du_Frioul.jpg" alt="Iles du Frioul">
-                <figcaption><h2>Iles du Frioul</h2></figcaption>
-            </figure>
-            <figure>
-                <img src="images/activites/4_small/Parc_des_Calanques.jpg" alt="Parc National des Calanques">
-                <figcaption><h2>Parc National des Calanques</h2></figcaption>
-            </figure>
-            <figure>
-                <img src="images/activites/4_small/Notre_Dame_de_la_Garde.jpg" alt="Notre-Dame-de-la-Garde">
-                <figcaption><h2>Notre-Dame-de-la-Garde</h2></figcaption>
-            </figure>
-            <figure>
-                <img src="images/activites/4_small/Parc_Longchamp.jpg" alt="Parc Longchamp">
-                <figcaption><h2>Parc Longchamp</h2></figcaption>
-            </figure>
-        </div>
-    </section> 
+<!---------------------------------------------Les activités (galerie)------------------------------------------------------->
+ 
+
+    <section id="galerie">
+        <div class="activites">
+            <h2>Activités à Marseille</h2>    
+            <div class="listing">
+                <div class="colonne grande-image encart">
+                    <div class="galerie1"></div>
+                    <figcaption class="legende"><h2>Vieux port</h2></figcaption>
+                </div>
+                <div class="colonne petite-image">
+                    <div class="encart">
+                        <div class="galerie2"></div>
+                        <figcaption class="legende"><h2>Fort de Pomègues</h2></figcaption>
+                    </div>
+                    <div class="encart">
+                        <div class="galerie3"></div>
+                        <figcaption class="legende"><h2>Iles du Frioul</h2></figcaption>
+                    </div>
+                </div>
+                <div class="colonne grande-image encart">
+                    <div class="galerie4"></div>
+                    <figcaption class="legende"><h2>Parc National des Calanques</h2></figcaption>
+                </div>
+                <div class="colonne petite-image">
+                    <div class="encart">
+                        <div class="galerie5"></div>
+                        <figcaption class="legende"><h2>Notre-Dame-de-la-Garde</h2></figcaption>
+                    </div>
+                    <div class="encart">
+                        <div class="galerie6"></div>
+                        <figcaption class="legende"><h2>Parc Longchamp</h2></figcaption>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
 
 <!---------------------------------------------Pied de page------------------------------------------------------->
     <footer>
         <div>
             <h2>A propos</h2>
             <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
+                <li><a href="">Fonctionnement du site</a></li>
+                <li><a href="">Conditions générales de vente</a></li>
+                <li><a href="">Données et confidentialité</a></li>
             </ul>
         </div>
         <div>
             <h2>Nos hébergements</h2>
             <ul>
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
+                <li><a href="">Charte qualité</a></li>
+                <li><a href="">Soumettre votre hôtel</a></li>
             </ul>
         </div>
         <div>
             <h2>Assistance</h2>
             <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
+                <li><a href="">Centre d'aide</a></li>
+                <li><a href="">Nous contacter</a></li>
             </ul>
+        </div>
+        <div class="marge">
+            
         </div>
     </footer>
 </body>

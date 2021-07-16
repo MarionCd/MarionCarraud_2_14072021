@@ -20,7 +20,7 @@ nav{
 }
 
 .logo:nth-child(1){
-    left: 0;
+    left: 60px;
     position:absolute;
     margin:20px 10px;
     padding-left:30px;
@@ -69,6 +69,9 @@ h3{
     color:#000;
 }
 
+#recherche{
+    margin-left:30px;
+}
 .icone-map{
     color:#000;
     padding:10px;
@@ -169,7 +172,7 @@ h3{
     flex-wrap:wrap;
 }
 
-.listing article, .listing figure{
+.listing article, .encart{
     box-shadow:  0px 0px 20px -10px #9B9898;
     margin: 10px;
     border-radius: 25px;
@@ -180,30 +183,29 @@ h3{
     font-weight: 500;
 }
 
-#activites .listing img, .logement img{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
 
 .logement img{
     width:300px;
     height:150px;
     border:5px solid #fff;
     object-fit: cover;    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .logement h2{
     line-height:5px;
+    margin-left:20px;
 }
 
 .logement .prix{
     padding-bottom:7px;
 }
 
-.logement figcaption, #liste-hebergements aside figcaption, #activites .listing figcaption{
+figcaption{
     background-color:#fff; 
 }
-.logement figcaption, #activites .listing figcaption{
+.logement figcaption, #galerie .listing .colonne figcaption{
     margin-top:-16px;
     padding:11px;
     border-bottom-left-radius: 25px;
@@ -241,7 +243,7 @@ h3{
 }
  
 .image2{
-    background-image:url('images/hebergements/4_small/Au_coeur_de_l_eau.jpg');
+    background-image: url('images/hebergements/4_small/Au_coeur_de_l_eau.jpg');
 }
 
 .image3{
@@ -266,10 +268,94 @@ h3{
     justify-content: space-between;
 }
 
-#activites .listing figure{
-    max-width:25%;
+
+.galerie1{
+    background-image: url('images/activites/4_small/Vieux_port.jpg');
+}
+.galerie2{
+    background-image: url('images/activites/4_small/Fort_de_Pomegues.jpg');
+}
+.galerie3{
+    background-image: url('images/activites/4_small/Iles_du_Frioul.jpg');
+}
+.galerie4{
+    background-image: url('images/activites/4_small/Parc_des_Calanques.jpg');
+}
+.galerie5{
+    background-image: url('images/activites/4_small/Notre_Dame_de_la_Garde.jpg');
+}
+.galerie6{
+    background-image: url('images/activites/4_small/Parc_Longchamp.jpg');
 }
 
-#activites .listing figure img{
-    object-fit:fill;
+#galerie .activites .listing{
+    justify-content: space-around;
+}
+
+#galerie .activites .listing .colonne{
+    width:20%;
+}
+
+.galerie1, .galerie2, .galerie3, .galerie4, .galerie5, .galerie6{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border:5px solid #fff;
+    background-size: cover;
+    background-position: center center;    
+}
+
+.galerie1, .galerie4{
+    height:380px;  
+}
+
+.galerie5, .galerie6{
+    height:150px;
+}
+
+.galerie2{
+    height:200px;
+} 
+
+.galerie3{
+    height:100px;
+}
+
+.petite-image{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.activites{
+    padding:10px 20px;
+}
+
+.activites h2{
+    margin-left:20px;
+}
+
+footer{
+    background-color: #F2F2F2;
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+footer ul{
+    padding:0px;
+}
+
+footer li{
+    list-style-type: none;
+    font-weight: 500;    
+    line-height: 28px;
+}
+
+footer a{
+    text-decoration: none;
+    color:#000;
+}
+
+footer .marge{
+    width:20%;
 }
