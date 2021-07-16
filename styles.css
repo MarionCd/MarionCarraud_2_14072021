@@ -136,8 +136,34 @@ h3{
     margin-right:13px;
 }
 
+.filtres .choix:hover{
+    cursor:help;
+}
+
+.filtres .choix .tooltip{
+    visibility: hidden;
+    width: 200px;
+    background-color:#0065FC;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    margin-top:-38px;
+    margin-left:-130px;
+  }
+
+  .filtres .choix:hover .tooltip{
+    visibility: visible;
+  }
+
 .filtres .titre-filtre{
     margin:10px 20px 0px 5px;
+}
+
+.filtres .titres-filtres:hover{
+    color: #f2f2f2;
 }
 
 .filtres i{
@@ -146,6 +172,12 @@ h3{
     color:#0065FC;
     padding:12px;
 }
+.filtres i:hover{
+    background-color:#0065FC;
+    color:#F2F2F2;
+    transition-duration:2000ms;
+}
+
 
 .nb-logement{
     color:#000;
