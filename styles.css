@@ -1,5 +1,9 @@
+
+/***********************************Police Raleway*********************************************/
+
 @font-face {font-family: "raleway"; src: url('../PremierProjet/Raleway/Raleway-VariableFont_wght.ttf'); }
 
+/***********************************Général*********************************************/
 body{
     color:#0065FC;
     font-family:'raleway', sans-serif;
@@ -14,6 +18,9 @@ body{
 h2, h3{
     font-weight: 500;
 }
+
+/***********************************Navigation*********************************************/
+
 nav{
     display:flex;
     justify-content:flex-end;
@@ -85,7 +92,7 @@ h2{
 h3{
     color:#000;
 }
-
+/***********************************Barre de recherche*********************************************/
 .recherche{
     margin-left:30px;
 }
@@ -117,10 +124,16 @@ h3{
     border:none;
     cursor:pointer;
 }
-
+/***********************************Filtres*********************************************/
 .filtres{
     display:flex;
     margin-top:30px;
+  
+}
+
+.filtres a{
+    text-decoration:none;
+    color:#0065FC;
 }
 
 .filtres h2{
@@ -136,9 +149,6 @@ h3{
     margin-right:13px;
 }
 
-.filtres .choix:hover{
-    cursor:help;
-}
 
 .filtres .choix .tooltip{
     visibility: hidden;
@@ -162,9 +172,6 @@ h3{
     margin:10px 20px 0px 5px;
 }
 
-.filtres .titres-filtres:hover{
-    color: #f2f2f2;
-}
 
 .filtres i{
     border-radius:50%;
@@ -172,7 +179,7 @@ h3{
     color:#0065FC;
     padding:12px;
 }
-.filtres i:hover{
+.filtres i:hover, .filtres .choix:hover i{
     background-color:#0065FC;
     color:#F2F2F2;
     transition-duration:2000ms;
@@ -193,6 +200,8 @@ h3{
     padding:5px 9px;
 }
 
+/***********************************Liste des hébergements*********************************************/
+
 #liste-hebergements{
     display:flex;
     flex-wrap:wrap; 
@@ -206,6 +215,9 @@ h3{
     padding:10px 20px;
 }
 
+#liste-hebergements a, #galerie a{
+    text-decoration:none;
+}
 
 .logement{
     width:70%;
@@ -267,6 +279,8 @@ figcaption{
     color:#F2F2F2
 }
 
+/***********************************Les plus populaires*********************************************/
+
 #liste-hebergements aside{
     width:20%;
 }
@@ -319,7 +333,7 @@ figcaption{
     justify-content: space-between;
 }
 
-
+/***********************************Activités*********************************************/
 .galerie1{
     background-image: url('images/activites/4_small/Vieux_port.jpg');
 }
@@ -385,6 +399,8 @@ figcaption{
     margin-left:20px;
 }
 
+/**********************************Footer*********************************************/
+
 footer{
     background-color: #F2F2F2;
     display:flex;
@@ -411,6 +427,13 @@ footer .marge{
     width:20%;
 }
 
-#liste-hebergements a, #galerie a{
-    text-decoration:none;
+/**********************************Media queries*********************************************/
+
+@media screen and (max-width:769px) {
+    .inscription:nth-child(4){
+        right: 0;
+        position:absolute;
+
+    }
+
 }
