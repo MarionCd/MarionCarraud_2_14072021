@@ -504,10 +504,9 @@ footer .marge{
        
    }
    .suggestion{
-    
        width:100%;
        height:auto;
-       
+       margin-left:2.5%;
    }
    .etoiles{
        color:#0065FC;
@@ -520,7 +519,7 @@ footer .marge{
        display:flex;
        flex-wrap:wrap;
        flex-direction: column;
-       width:100%;
+       width:95%;
    }
    #liste-hebergements aside figcaption{
        width:66%;
@@ -531,6 +530,18 @@ footer .marge{
    }
    .image1, .image2, .image3{
        background-position: center center;
+   }
+   .marseille{
+       padding-top:10px;
+   }
+   .logement img{
+       width:100%;
+       height:190px;
+       object-position:0% 70%;
+       border:0px solid #fff;
+   }
+   .logement .listing article{
+       border:5px solid #fff;
    }
 
    
