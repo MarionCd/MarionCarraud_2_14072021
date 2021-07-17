@@ -305,15 +305,15 @@ figcaption{
     background-position: bottom center;
 }
 .image1{
-    background-image: url('images/hebergements/4_small/Hotel_le_soleil_du_matin.jpg');
+    background-image: url('images/hebergements/3_medium/Hotel_le_soleil_du_matin.jpg');
 }
  
 .image2{
-    background-image: url('images/hebergements/4_small/Au_coeur_de_l_eau.jpg');
+    background-image: url('images/hebergements/3_medium/Au_coeur_de_l_eau.jpg');
 }
 
 .image3{
-    background-image: url('images/hebergements/4_small/Hotel_tout_bleu_tout_blanc.jpg');
+    background-image: url('images/hebergements/3_medium/Hotel_tout_bleu_tout_blanc.jpg');
 }
 
 
@@ -336,22 +336,22 @@ figcaption{
 
 /***********************************Activités*********************************************/
 .galerie1{
-    background-image: url('images/activites/4_small/Vieux_port.jpg');
+    background-image: url('images/activites/3_medium/Vieux_port.jpg');
 }
 .galerie2{
-    background-image: url('images/activites/4_small/Fort_de_Pomegues.jpg');
+    background-image: url('images/activites/3_medium/Fort_de_Pomegues.jpg');
 }
 .galerie3{
-    background-image: url('images/activites/4_small/Iles_du_Frioul.jpg');
+    background-image: url('images/activites/3_medium/Ils_du_Frioul.jpg');
 }
 .galerie4{
-    background-image: url('images/activites/4_small/Parc_des_Calanques.jpg');
+    background-image: url('images/activites/3_medium/Parc_des_Calanques.jpg');
 }
 .galerie5{
-    background-image: url('images/activites/4_small/Notre_Dame_de_la_Garde.jpg');
+    background-image: url('images/activites/3_medium/Notre_Dame_de_la_Garde.jpg');
 }
 .galerie6{
-    background-image: url('images/activites/4_small/Parc_Longchamp.jpg');
+    background-image: url('images/activites/3_medium/Parc_Longchamp.jpg');
 }
 
 #galerie .activites .listing{
@@ -567,7 +567,13 @@ footer .marge{
        flex-direction:column;
        padding:0px;
        padding-top:20px;
-       padding-left:40px;
+       
+   }
+   footer div{
+       padding-left:20px;
+   }
+   .img-desktop{
+       display:none;
    }
    
    footer .marge{
@@ -580,4 +586,8 @@ footer .marge{
     .menu-mobile{
         display: none;
     }
+    
+   .img-mobile{
+    display:none;
+}
  }
