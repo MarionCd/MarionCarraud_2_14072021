@@ -520,6 +520,7 @@ footer .marge{
        flex-wrap:wrap;
        flex-direction: column;
        width:95%;
+       margin-left:2.5%;
    }
    #liste-hebergements aside figcaption{
        width:66%;
@@ -542,6 +543,35 @@ footer .marge{
    }
    .logement .listing article{
        border:5px solid #fff;
+   }
+   .logement h2 a{
+       margin-left:15px;
+   }
+   .activites{
+       padding:0px;
+   }
+   #galerie .activites .listing .colonne{
+       width:100%;
+   }
+   .galerie1, .galerie2, .galerie3, .galerie4, .galerie5, .galerie6{
+       height:250px;
+   }
+   .encart{
+       margin:0px;
+   }
+   .colonne, .pomegues, .ndlagarde{
+       margin-bottom:10px;
+   }
+   footer{
+       width:100%;
+       flex-direction:column;
+       padding:0px;
+       padding-top:20px;
+       padding-left:40px;
+   }
+   
+   footer .marge{
+       display:none;
    }
 
    
