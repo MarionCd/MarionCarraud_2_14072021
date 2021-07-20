@@ -1,7 +1,7 @@
 
 /***********************************Police Raleway*********************************************/
 
-@font-face {font-family: "raleway"; src: url('../PremierProjet/Raleway/Raleway-VariableFont_wght.ttf'); }
+@font-face {font-family: "raleway"; src: url('./raleway/Raleway-VariableFont_wght.ttf'); }
 
 /***********************************Général*********************************************/
 body{
@@ -305,15 +305,15 @@ figcaption{
     background-position: bottom center;
 }
 .image1{
-    background-image: url('images/hebergements/3_medium/Hotel_le_soleil_du_matin.jpg');
+    background-image: url('./images/hebergements/3_medium/Hotel_le_soleil_du_matin.jpg');
 }
  
 .image2{
-    background-image: url('images/hebergements/3_medium/Au_coeur_de_l_eau.jpg');
+    background-image: url('./images/hebergements/3_medium/Au_coeur_de_l_eau.jpg');
 }
 
 .image3{
-    background-image: url('images/hebergements/3_medium/Hotel_tout_bleu_tout_blanc.jpg');
+    background-image: url('./images/hebergements/3_medium/Hotel_tout_bleu_tout_blanc.jpg');
 }
 
 
@@ -327,6 +327,10 @@ figcaption{
 }
 #liste-hebergements aside figcaption .etoiles{
     margin-bottom:5px;
+    color:#0065FC;
+}
+#liste-hebergements .etoiles{
+    color:#0065FC;
 }
 
 .populaires{
@@ -336,22 +340,22 @@ figcaption{
 
 /***********************************Activités*********************************************/
 .galerie1{
-    background-image: url('images/activites/3_medium/Vieux_port.jpg');
+    background-image: url('./images/activites/3_medium/Vieux_port.jpg');
 }
 .galerie2{
-    background-image: url('images/activites/3_medium/Fort_de_Pomegues.jpg');
+    background-image: url('./images/activites/3_medium/Fort_de_Pomegues.jpg');
 }
 .galerie3{
-    background-image: url('images/activites/3_medium/Ils_du_Frioul.jpg');
+    background-image: url('./images/activites/3_medium/Ils_du_Frioul.jpg');
 }
 .galerie4{
-    background-image: url('images/activites/3_medium/Parc_des_Calanques.jpg');
+    background-image: url('./images/activites/3_medium/Parc_des_Calanques.jpg');
 }
 .galerie5{
-    background-image: url('images/activites/3_medium/Notre_Dame_de_la_Garde.jpg');
+    background-image: url('./images/activites/3_medium/Notre_Dame_de_la_Garde.jpg');
 }
 .galerie6{
-    background-image: url('images/activites/3_medium/Parc_Longchamp.jpg');
+    background-image: url('./images/activites/3_medium/Parc_Longchamp.jpg');
 }
 
 #galerie .activites .listing{
@@ -472,7 +476,7 @@ footer .marge{
 
 
 
-@media screen and (max-width:800px) {
+@media all and (max-width:800px) {
     body{
         padding:5px;
     }
