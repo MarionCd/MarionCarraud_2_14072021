@@ -265,10 +265,10 @@ h3{
     padding-bottom:7px;
 }
 
-figcaption{
+.legende-article{
     background-color:#fff; 
 }
-.logement figcaption, #galerie .listing .colonne figcaption{
+.logement .legende-article, #galerie .listing .colonne .legende-article{
     margin-top:-16px;
     padding:11px;
     border-bottom-left-radius: 25px;
@@ -316,7 +316,7 @@ figcaption{
 }
 
 
-#liste-hebergements .hebergements-populaires figcaption{
+#liste-hebergements .hebergements-populaires .legende-article{
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px; 
     display:flex;
@@ -324,7 +324,7 @@ figcaption{
     justify-content: space-between;
     max-width:50%;
 }
-#liste-hebergements .hebergements-populaires figcaption .etoiles{
+#liste-hebergements .hebergements-populaires .legende-article .etoiles{
     margin-bottom:5px;
     color:#0065FC;
 }
@@ -515,7 +515,7 @@ footer .marge{
        width:95%;
        margin-left:2.5%;
    }
-   #liste-hebergements .hebergements-populaires figcaption{
+   #liste-hebergements .hebergements-populaires .legende-article{
        width:66%;
        max-width:66%;
    }
