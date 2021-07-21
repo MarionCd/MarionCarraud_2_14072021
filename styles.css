@@ -208,7 +208,7 @@ h3{
     
 }
 
-#liste-hebergements aside, .logement{
+#liste-hebergements .hebergements-populaires, .logement{
     background-color: #F2F2F2;
     border-radius: 25px;
     padding:10px 20px;
@@ -281,11 +281,11 @@ figcaption{
 
 /***********************************Les plus populaires*********************************************/
 
-#liste-hebergements aside{
+#liste-hebergements .hebergements-populaires{
     width:20%;
 }
 
-#liste-hebergements aside .suggestion{
+#liste-hebergements .hebergements-populaires .suggestion{
     display:flex;
     flex:auto;
     margin-bottom:20px;
@@ -316,7 +316,7 @@ figcaption{
 }
 
 
-#liste-hebergements aside figcaption{
+#liste-hebergements .hebergements-populaires figcaption{
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px; 
     display:flex;
@@ -324,7 +324,7 @@ figcaption{
     justify-content: space-between;
     max-width:50%;
 }
-#liste-hebergements aside figcaption .etoiles{
+#liste-hebergements .hebergements-populaires figcaption .etoiles{
     margin-bottom:5px;
     color:#0065FC;
 }
@@ -484,7 +484,7 @@ footer .marge{
        flex-direction:column-reverse ;
        
    }
-   #liste-hebergements aside, #liste-hebergements .logement{
+   #liste-hebergements .hebergements-populaires, #liste-hebergements .logement{
        width:100%;
        border-radius:0px;
        padding:0px;
@@ -493,7 +493,7 @@ footer .marge{
    #liste-hebergements .logement{
        background-color:#fff;
    }
-   #liste-hebergements aside{
+   #liste-hebergements .hebergements-populaires{
        
    }
    .suggestion{
@@ -515,7 +515,7 @@ footer .marge{
        width:95%;
        margin-left:2.5%;
    }
-   #liste-hebergements aside figcaption{
+   #liste-hebergements .hebergements-populaires figcaption{
        width:66%;
        max-width:66%;
    }
