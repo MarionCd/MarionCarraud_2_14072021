@@ -9,8 +9,6 @@ body{
     font-family:'raleway', sans-serif;
     font-size:15px;
     font-weight: lighter;
-    padding-left:30px;
-    padding-right:30px;
     background-color:#fff;
     margin:0 auto;
 }
@@ -260,6 +258,7 @@ h3{
 }
 .marseille {
     margin-left:20px;
+    font-size:18px;
 }
 
 .logement .prix{
@@ -369,7 +368,6 @@ figcaption{
 .galerie1, .galerie2, .galerie3, .galerie4, .galerie5, .galerie6{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    border:5px solid #fff;
     background-size: cover;
     background-position: center center;    
 }
@@ -470,17 +468,8 @@ footer .marge{
 }
 
 
-.ligne-2 h2{
-    
-}
-
-
-
 @media all and (max-width:800px) {
-    body{
-        padding:5px;
-    }
-   
+
     .menu-desktop{
        display: none;
    }
@@ -538,6 +527,7 @@ footer .marge{
    }
    .marseille{
        padding-top:10px;
+      
    }
    .logement img{
        width:100%;
@@ -586,7 +576,7 @@ footer .marge{
 
    
 }
-@media screen and (min-width:801px) {
+@media all and (min-width:801px) {
     .menu-mobile{
         display: none;
     }
