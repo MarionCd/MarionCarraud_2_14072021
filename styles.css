@@ -571,7 +571,7 @@ footer #marge{
 }
 
 
-@media all and (min-width:375px) and (max-width:800px){
+@media all and (max-width:800px){
     #menu-desktop{
         display:none;
     }
