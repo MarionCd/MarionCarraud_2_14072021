@@ -792,8 +792,49 @@ footer #marge{
     #filtres .choix{
         margin-right:10px;
     }
-    .liste{
-        justify-content: space-around;
+    .populaires__vignette,
+    .populaires__image{
+        width:340px;
+    }
+    .populaires__image{
+        background-position:50% 60%;
+    }
+    .carte--logements{
+        height:290px;
+    }
+    .logements__vignette{
+        height:200px;
+    }
+    .logements__image{
+        background-position: 50% 60%;
+    }
+    #galerie .galerie__carte-mobile{
+        height:290px;
+    }
+    .galerie__carte-mobile a div:nth-child(1),
+    #pomegues,
+    #frioul,
+    #ndgarde,
+    #longchamp{
+        height:232px;
+    }
+    #vieux-port{
+        background-image: url('./images/activites/3_medium/Vieux_port.jpg');
+    }
+    #pomegues{
+        background-image: url('./images/activites/3_medium/Fort_de_Pomegues.jpg');
+    }
+    #frioul{
+        background-image: url('./images/activites/3_medium/Ils_du_Frioul.jpg');
+    }
+    #ndgarde{
+        background-image: url('./images/activites/3_medium/Notre_Dame_de_la_Garde.jpg');
+    }
+    #calanques{
+        background-image: url('./images/activites/3_medium/Parc_des_Calanques.jpg');
+    }
+    #longchamp{
+        background-image: url('./images/activites/3_medium/Parc_Longchamp.jpg');
     }
 
 }
