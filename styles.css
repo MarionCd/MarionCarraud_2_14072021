@@ -697,6 +697,23 @@ footer #marge{
         height:132px;
     }
 
+    #vieux-port,
+    #ndgarde{
+        background-position:50% 20%;
+
+    }
+    #pomegues{
+        background-position: 50% 45%;
+    }
+
+    #frioul,
+    #calanques{
+        background-position: 50% 25%;
+    }
+    #longchamp{
+        background-position: 50% 30%;
+    }
+
     footer{
         margin-top:50px;
         width:auto;
