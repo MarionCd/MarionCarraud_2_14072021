@@ -785,7 +785,7 @@ footer #marge{
         font-size:12px;
     }
 }
-@media all and (min-width:720px) and (max-width:799px){
+@media all and (min-width:720px) and (max-width:800px){
     #filtres{
         justify-content: flex-start;
     }
