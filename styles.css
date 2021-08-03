@@ -819,22 +819,22 @@ footer #marge{
         height:232px;
     }
     #vieux-port{
-        background-image: url('./images/activites/3_medium/Vieux_port.jpg');
+        background-image: url('./images/activites/2_large/Vieux-port.jpg');
     }
     #pomegues{
-        background-image: url('./images/activites/3_medium/Fort_de_Pomegues.jpg');
+        background-image: url('./images/activites/2_large/Pomegues.jpg');
     }
     #frioul{
-        background-image: url('./images/activites/3_medium/Ils_du_Frioul.jpg');
+        background-image: url('./images/activites/2_large/Iles-du-Frioul.jpg');
     }
     #ndgarde{
-        background-image: url('./images/activites/3_medium/Notre_Dame_de_la_Garde.jpg');
+        background-image: url('./images/activites/2_large/notre-dame-de-la-garde.jpg');
     }
     #calanques{
-        background-image: url('./images/activites/3_medium/Parc_des_Calanques.jpg');
+        background-image: url('./images/activites/2_large/Calanques.jpg');
     }
     #longchamp{
-        background-image: url('./images/activites/3_medium/Parc_Longchamp.jpg');
+        background-image: url('./images/activites/2_large/Longchamp.jpg');
     }
 
     #cannebiere{
