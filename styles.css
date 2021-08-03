@@ -1,6 +1,5 @@
 /***********************************Général*********************************************/
 body{
-    margin: 0px 50px;
     background-color:#fff;
     color:#000;
     font-family:'Raleway', sans-serif;
@@ -42,6 +41,7 @@ button{
 
 /***********************************Navigation*********************************************/
 
+/*navigation screen min-width 801px*/
 #menu-desktop{
     display:flex;
     justify-content:space-between;
@@ -56,7 +56,7 @@ button{
 #menu-desktop div:nth-child(2){
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width:30%;
     height:100%;
 }
@@ -94,6 +94,43 @@ button{
 #menu-desktop div:nth-child(2) a:nth-child(2):hover:before{
     transform: scaleX(1);
     transition: transform 2000ms;
+}
+
+/*navigation screen max-width 800px*/
+
+#menu-mobile{
+    width:100%;
+}
+
+#mobile__nav1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:100px;
+    align-items:center;
+    margin:0px 20px;
+}
+#mobile__nav1 div:nth-child(2) a{
+    color:#0065FC;
+    font-weight: bold;
+}
+
+#mobile__nav2{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height:35px;
+}
+
+#mobile__nav2 a{
+    width:50%;
+    text-align:center;
+    border-bottom:3px solid #f2f2f2;
+}
+
+#mobile__nav2 a:hover,
+#mobile__nav2 a:active{
+    border-bottom:3px solid #0065FC;
 }
 
 /***********************************Barre de recherche*********************************************/
@@ -148,6 +185,14 @@ button{
     font-size:17px;
 }
 
+.recherche__barre .fa-search{
+    color:#fff;
+    background-color: #0065FC;
+    height:100%;
+    width:50px;
+    border-radius:15px;
+    margin-left:-15px;
+}
 
 /***********************************Filtres*********************************************/
 #filtres{
@@ -156,6 +201,7 @@ button{
     margin-top:30px;  
     width:70%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #filtres .choix{
@@ -206,6 +252,11 @@ button{
 }
 #resultats div{
     padding-top:3px;
+}
+
+#filtres__titre{
+    padding:0px;
+    margin:30px 0px 0px 0px;
 }
 
 /***********************************Liste des hébergements*********************************************/
@@ -388,15 +439,18 @@ button{
 
 /***********************************Activités*********************************************/
 
-#activites h2{
+#activites{
     margin-top:60px;
+}
+
+#activites h2{
     margin-bottom:25px
 }
 
 #galerie{
     display:flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     height: 445px;
     justify-content: space-between;
 }
@@ -501,129 +555,187 @@ footer #marge{
     width:20%;
 }
 
-/**********************************Media queries*********************************************/
+/**********************************Media queries********************************************/
 
-.menu-mobile .ligne-1, .menu-mobile .ligne-2{
-    display:flex;
-    flex-direction:row;
-}
-.menu-mobile .ligne-1{
-    justify-content: space-between;
-    padding:20px;
-}
+@media all and (max-width:800px){
+    #menu-desktop{
+        display:none;
+    }
+    h3{
+        font-size:14px;
+    }
 
-.ligne-1 h2, .ligne-2 h2{
-    color:#0065FC;
-}
-
-.menu-mobile .ligne-2{
-    justify-content: center;
+    #recherche{
+        margin-top:35px;
+        margin-right:20px;
+        margin-left:20px;
+    }
+    .recherche__barre input{
+        width:185px;
+    }
+    .recherche__barre button{
+        display:none;
+    }
+    #filtres{
+        width:auto;
+        margin-top:15px;
+    }
+    #filtres h2{
+        display:none;
+    }
+    #filtres .choix{
+        margin-bottom:10px;
+    }
+    #resultats{
+        margin-top:25px;
+    }
+    #resultats i{
+        height:100%;
+    }
+    #hebergements{
+        margin-top:35px;
+        flex-direction: column-reverse;
     
-}
-.ligne-2 .menu-hebergements, .ligne-2 .menu-activites{
-    text-align:center;
-    width:50%;
+    }
+
+    #hebergements h2{
+        padding-left:20px;
+    }
+    #populaires{
+        width:100%;
+        padding-bottom:25px;
+    }
+    #populaires__titre i{
+        padding-right:20px;
+    }
+    .bloc-gris{
+        border-radius:0px;
+    }
+    .liste{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .populaires__legende .prix{
+        padding-bottom:25px;
+    }
+    #logements{
+        width:100%;
+        background-color:#fff;
+    }
+    .liste{
+        flex-direction: column;
+    }
+    #hebergements h2{
+        margin-top:40px;
+        margin-bottom:15px;
+    }
+
+    #logements .liste{
+        margin-top:20px;
+        width:100%;
+    }
+
+    #populaires__titre{
+        align-items:baseline;
+    }
+    #populaires .liste,
+    #logements .liste{
+        padding:0px;
+        margin:0px;
+    }
+    .populaires__carte a{
+        justify-content:start;
+    }
+
+    .populaires__legende{
+        padding-right:20px;
+    }
+    .populaires__carte,
+    .carte--logements{
+        width:auto;
+        margin-right: 20px;
+        margin-left:20px;
+        margin-bottom:10px;
+    }
+    .logements__vignette{
+        width:100%;
+    }
+    .afficher{
+        margin-top:20px;
+        padding:0px 20px;
+    }
+
+    #activites{
+        margin-top:50px;
+        margin-right:20px;
+        margin-left:20px;
+    }
+    #galerie{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height:auto;
+    }
+
+    #galerie .carte{
+        width:100%;
+    }
+
+    .galerie__petite-carte{
+        display:block;
+    }
+
+    #galerie .galerie__carte-mobile{
+        height:190px;       
+        margin-bottom:20px;
+    }
+
+    .galerie__carte-mobile a div:nth-child(1),
+    #pomegues,
+    #frioul,
+    #ndgarde,
+    #longchamp{
+        height:132px;
+    }
+
+    footer{
+        margin-top:50px;
+        width:auto;
+        flex-direction:column;
+        padding-top:50px;
+        padding-left:25px;
+        padding-bottom:45px;
+        
+    }
     
+    footer .marge{
+        display:none;
+    }
+
 }
 
-.ligne-2 a{
-    border-bottom: 3px solid #f2f2f2;
+@media all and (min-width:801px){
+    body{
+        margin: 0px 50px;
+    }
+    
+    #menu-mobile{
+        display:none;
+    }
+    .recherche__barre .fa-search{
+        display:none;
+    }
+    #filtres__titre{
+        display:none;
+    }
 }
 
-.ligne-2 a:hover{
-    border-bottom: 3px solid #0065FC;
-    transition-duration: 1500ms;
-}
+
+/*
 
 
 @media all and (max-width:800px) {
 
-    #menu-desktop{
-       display: none;
-   }
-   .filtres{
-       flex-wrap: wrap;
-       flex-flow:column;
-   }
-   .choix{
-       margin-top:10px;
-   }
-   #liste-hebergements{
-       flex-direction:column-reverse ;
-       
-   }
-   #liste-hebergements .hebergements-populaires, #liste-hebergements .logement{
-       width:100%;
-       border-radius:0px;
-       padding:0px;
-      
-   }
-   #liste-hebergements .logement{
-       background-color:#fff;
-   }
-   #liste-hebergements .hebergements-populaires{
-       
-   }
-   .suggestion{
-       width:100%;
-       height:auto;
-       margin-left:2.5%;
-   }
-   .etoiles{
-       color:#0065FC;
-   }
-   
-   .populaires{
-       padding:10px;
-   }
-   .listing{
-       display:flex;
-       flex-wrap:wrap;
-       flex-direction: column;
-       width:95%;
-       margin-left:2.5%;
-   }
-   #liste-hebergements .hebergements-populaires .legende-article{
-       width:66%;
-       max-width:66%;
-   }
-   .cadre{
-       width:33%;
-   }
-   .image1, .image2, .image3{
-       background-position: center center;
-   }
-   .marseille{
-       padding-top:10px;
-      
-   }
-   .logement img{
-       width:100%;
-       height:190px;
-       object-position:0% 70%;
-       border:0px solid #fff;
-   }
-   .logement .listing article{
-       border:5px solid #fff;
-   }
-   .logement h2 a{
-       margin-left:15px;
-   }
-   .activites{
-       padding:0px;
-   }
-   #galerie .activites .listing .colonne{
-       width:100%;
-   }
-   .galerie1, .galerie2, .galerie3, .galerie4, .galerie5, .galerie6{
-       height:250px;
-   }
-   .encart{
-       margin:0px;
-   }
-   .colonne, .pomegues, .ndlagarde{
-       margin-bottom:10px;
-   }
+  
    footer{
        width:100%;
        flex-direction:column;

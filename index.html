@@ -23,21 +23,25 @@
             <div>
                 <a href="#hebergements">Hébergements</a>
                 <a href="#activites">Activités</a>
-                <a href="#" class="inscription">S'inscrire</a>
+                <a href="#">S'inscrire</a>
             </div>
         </nav>
 
         <!-- En-tête mobile -->
 
         <nav id="menu-mobile">
-            <div class="ligne-1">
-                <img src="./images/logo/Reservia.svg" class="logo" alt="Reservia">
-                <a href="#" class="inscription"><h2>S'inscrire</h2></a>
+            <div id="mobile__nav1">
+                <div><a href="#">
+                    <img src="./images/logo/Reservia.svg" class="logo" alt="Reservia">
+                </a></div>
+                <div><a href="#">S'inscrire</a></div>
             </div>
-            <div class="ligne-2">
-                <a href="#hebergements" class="menu-hebergements"><h2>Hébergements</h2></a>
-                <a href="#activites" class="menu-activites"><h2>Activités</h2></a>          
+
+            <div id="mobile__nav2">
+                <a href="#hebergements">Hébergements</a>
+                <a href="#activites">Activités</a>
             </div>
+
         </nav>
     </header>
 
@@ -47,9 +51,9 @@
         <div class="recherche__argt">En plein centre ville ou en pleine nature</div>
         
         <div class="recherche__barre">
-            <i class="fas fa-map-marker-alt"></i><input type="text" id="text-recherche" placeholder="Marseille, France"><button>Rechercher</button>
+            <i class="fas fa-map-marker-alt"></i><input type="text" id="text-recherche" placeholder="Marseille, France"><button>Rechercher</button><i class="fas fa-search"></i>
         </div>
-
+            <h2 id="filtres__titre">Filtres</h2>
         <div id="filtres">
             <h2>Filtres</h2>
 
@@ -250,7 +254,7 @@
     <section id="activites">
         <h2>Activités à Marseille</h2>     
         <div id="galerie">
-            <div class="carte galerie__grande-carte"><a href="#">
+            <div class="carte galerie__grande-carte galerie__carte-mobile"><a href="#">
                 <div id="vieux-port"></div>
                 <div class="galerie__legende">
                     Vieux port
@@ -258,13 +262,13 @@
             </a></div>
 
             <div class="galerie__petite-carte">
-                <div id="galerie--pcarte1" class="carte"><a href="#">
+                <div id="galerie--pcarte1" class="carte galerie__carte-mobile"><a href="#">
                     <div id="pomegues"></div>
                     <div class="galerie__legende">
                         Fort de Pomègues
                     </div>
                 </a></div>
-                <div id="galerie--pcarte2" class="carte"><a href="#">
+                <div id="galerie--pcarte2" class="carte galerie__carte-mobile"><a href="#">
                     <div id="frioul"></div>
                     <div class="galerie__legende">
                         Îles du Frioul
@@ -272,7 +276,7 @@
                 </a></div>
             </div>
 
-            <div class="carte galerie__grande-carte"><a href="#">
+            <div class="carte galerie__grande-carte galerie__carte-mobile"><a href="#">
                 <div id="calanques"></div>
                 <div class="galerie__legende">
                     Parc national des Calanques
@@ -280,13 +284,13 @@
             </a></div>
 
             <div class="galerie__petite-carte">
-                <div id="galerie--pcarte3" class="carte"><a href="#">
+                <div id="galerie--pcarte3" class="carte galerie__carte-mobile"><a href="#">
                     <div id="ndgarde"></div>
                     <div class="galerie__legende">
                         Notre-Dame-de-la-Garde
                     </div>
                 </a></div>
-                <div id="galerie--pcarte4" class="carte"><a href="#">
+                <div id="galerie--pcarte4" class="carte galerie__carte-mobile"><a href="#">
                     <div id="longchamp"></div>
                     <div class="galerie__legende">
                         Parc Longchamp
