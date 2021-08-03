@@ -556,8 +556,22 @@ footer #marge{
 }
 
 /**********************************Media queries********************************************/
+@media all and (max-width:374px){
+    .recherche__barre{
+        height:30px;
+    }
+    .recherche__barre .fas{
+        line-height: 2;
 
-@media all and (max-width:800px){
+    }
+
+    .recherche__barre input{
+        width:140px;
+    }
+}
+
+
+@media all and (min-width:375px) and (max-width:800px){
     #menu-desktop{
         display:none;
     }
