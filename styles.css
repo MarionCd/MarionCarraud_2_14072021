@@ -558,7 +558,7 @@ footer #marge{
 /**********************************Media queries********************************************/
 
 
-@media all and (max-width:800px){
+@media all and (max-width:1024px){
     #menu-desktop{
         display:none;
     }
@@ -731,7 +731,7 @@ footer #marge{
 
 }
 
-@media all and (min-width:801px){
+@media all and (min-width:1025px){
     body{
         margin: 0px 50px;
     }
@@ -785,7 +785,7 @@ footer #marge{
         font-size:12px;
     }
 }
-@media all and (min-width:720px) and (max-width:800px){
+@media all and (min-width:720px) and (max-width:1024px){
     #filtres{
         justify-content: flex-start;
     }
