@@ -758,6 +758,30 @@ footer #marge{
     }
 
     .recherche__barre input{
-        width:140px;
+        width:160px;
+        height:26px;
+    }
+
+    .recherche__barre i,
+    .recherche__barre .fa-search{
+        width:35px;
+    }
+    .recherche__barre .fa-search{
+        margin-left:-13px;
+    }
+
+    .populaires__legende{
+        padding-right:0px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+
+    .populaires__legende .prix{
+        padding-top:5px;
+        padding-bottom:10px;
+    }
+    .etoiles{
+        font-size:12px;
     }
 }
