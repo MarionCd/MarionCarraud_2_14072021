@@ -316,6 +316,7 @@ button{
     height:200px;
     width:245px;
     margin-bottom:25px;
+    margin-right: 5px;
 
 }
 
@@ -731,21 +732,6 @@ footer #marge{
 
 }
 
-@media all and (min-width:1025px){
-    body{
-        margin: 0px 50px;
-    }
-    
-    #menu-mobile{
-        display:none;
-    }
-    .recherche__barre .fa-search{
-        display:none;
-    }
-    #filtres__titre{
-        display:none;
-    }
-}
 
 
 @media all and (max-width:374px){
@@ -856,4 +842,74 @@ footer #marge{
         background-image: url('./images/hebergements/3_medium/Hotel_chez_Amina.jpg');
     }
 
+}
+
+
+@media all and (min-width:1025px){
+    body{
+        margin: 0px 50px;
+    }
+    
+    #menu-mobile{
+        display:none;
+    }
+    .recherche__barre .fa-search{
+        display:none;
+    }
+    #filtres__titre{
+        display:none;
+    }
+}
+
+@media all and (min-width:1025px) and (max-width:1401px){
+    #menu-mobile{
+        display:none;
+    }
+    #filtres .choix{
+        margin-bottom:10px;
+    }
+    #resultats{
+        margin-top:30px;
+    }
+
+    .liste{
+        justify-content: space-around;
+    }
+
+    .populaires__carte{
+        height:auto;
+
+    }
+
+    .populaires__carte a{
+        flex-direction:column;
+    }
+    .populaires__vignette{
+        width:100%;
+        height:99px;
+    }
+    .populaires__image{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 25px;
+        width:100%
+    }
+    .populaires__legende .prix{
+        padding-bottom:0px;
+    }
+
+    #galerie .carte{
+        width:225px;
+    }
+
+}
+
+@media all and (min-width:1402px) and (max-width:1520px){
+    .populaires__legende{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .populaires__legende .prix{
+        padding:0px;
+    }
 }
