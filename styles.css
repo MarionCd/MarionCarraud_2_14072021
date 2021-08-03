@@ -837,4 +837,23 @@ footer #marge{
         background-image: url('./images/activites/3_medium/Parc_Longchamp.jpg');
     }
 
+    #cannebiere{
+        background-image: url('./images/hebergements/3_medium/Auberge_la_Cannebiere.jpg');
+    }
+    #port{
+        background-image: url('./images/hebergements/3_medium/Hotel_du_port.jpg');
+    }
+    #mouettes{
+        background-image: url('./images/hebergements/3_medium/Hotel_les_mouettes.jpg');
+    }
+    #mer{
+        background-image: url('./images/hebergements/3_medium/Hotel_de_la_mer.jpg');
+    }
+    #panier{
+        background-image: url('./images/hebergements/3_medium/Auberge_le_panier.jpg');
+    }
+    #amina{
+        background-image: url('./images/hebergements/3_medium/Hotel_chez_Amina.jpg');
+    }
+
 }
