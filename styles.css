@@ -785,3 +785,15 @@ footer #marge{
         font-size:12px;
     }
 }
+@media all and (min-width:720px) and (max-width:799px){
+    #filtres{
+        justify-content: flex-start;
+    }
+    #filtres .choix{
+        margin-right:10px;
+    }
+    .liste{
+        justify-content: space-around;
+    }
+
+}
