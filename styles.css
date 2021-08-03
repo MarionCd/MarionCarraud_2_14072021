@@ -556,19 +556,6 @@ footer #marge{
 }
 
 /**********************************Media queries********************************************/
-@media all and (max-width:374px){
-    .recherche__barre{
-        height:30px;
-    }
-    .recherche__barre .fas{
-        line-height: 2;
-
-    }
-
-    .recherche__barre input{
-        width:140px;
-    }
-}
 
 
 @media all and (max-width:800px){
@@ -761,38 +748,16 @@ footer #marge{
 }
 
 
-/*
-
-
-@media all and (max-width:800px) {
-
-  
-   footer{
-       width:100%;
-       flex-direction:column;
-       padding:0px;
-       padding-top:20px;
-       
-   }
-   footer div{
-       padding-left:20px;
-   }
-   .img-desktop{
-       display:none;
-   }
-   
-   footer .marge{
-       display:none;
-   }
-
-   
-}
-@media all and (min-width:801px) {
-    #menu-mobile{
-        display: none;
+@media all and (max-width:374px){
+    .recherche__barre{
+        height:30px;
     }
-    
-   .img-mobile{
-    display:none;
+    .recherche__barre .fas{
+        line-height: 2;
+
+    }
+
+    .recherche__barre input{
+        width:140px;
+    }
 }
- }
