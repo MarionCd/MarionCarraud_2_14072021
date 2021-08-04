@@ -721,13 +721,9 @@ footer #marge{
 
     footer{
         margin-top:50px;
-        width:auto;
+        width:100%;
         flex-direction:column;
-        padding-top:50px;
-        padding-left:25px;
-        padding-bottom:45px;
-        margin-left:0px;
-        margin-right:0px;
+        padding: 30px 80px 30px 80px;
         
     }
     
@@ -865,8 +861,7 @@ footer #marge{
         display:none;
     }
     footer{
-        margin-left:0px;
-        margin-right:0px;
+        padding: 30px 80px 30px 80px;
     }
 }
 
