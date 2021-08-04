@@ -719,7 +719,7 @@ footer #marge{
 
     footer{
         margin-top:50px;
-        width:100%;
+        width:auto;
         flex-direction:column;
         padding: 30px 80px 30px 80px;
         margin-left:0px;
