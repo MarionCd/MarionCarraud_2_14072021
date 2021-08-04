@@ -525,9 +525,6 @@ button{
     padding-left:18px;
 }
 
-footer{
-    margin-top:60px;
-}
 
 /**********************************Footer*********************************************/
 
@@ -536,6 +533,7 @@ footer{
     display:flex;
     justify-content: space-between;
     padding:30px 80px 30px 80px;
+    margin-top:60px;
     margin-left:-50px;
     margin-right:-50px;
 
@@ -724,6 +722,8 @@ footer #marge{
         width:100%;
         flex-direction:column;
         padding: 30px 80px 30px 80px;
+        margin-left:0px;
+        margin-right:0px;
         
     }
     
@@ -862,6 +862,8 @@ footer #marge{
     }
     footer{
         padding: 30px 80px 30px 80px;
+        margin-left:0px;
+        margin-right:0px;
     }
 }
 
