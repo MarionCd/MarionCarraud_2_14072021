@@ -726,6 +726,8 @@ footer #marge{
         padding-top:50px;
         padding-left:25px;
         padding-bottom:45px;
+        margin-left:0px;
+        margin-right:0px;
         
     }
     
@@ -861,6 +863,10 @@ footer #marge{
     }
     #filtres__titre{
         display:none;
+    }
+    footer{
+        margin-left:0px;
+        margin-right:0px;
     }
 }
 
