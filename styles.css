@@ -668,8 +668,12 @@ footer #marge{
     }
 
     .populaires__legende{
-        padding-right:20px;
+        padding-right:0px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
     }
+
     .populaires__carte,
     .carte--logements{
         width:auto;
