@@ -63,7 +63,8 @@ button{
 
 #menu-desktop div a:nth-child(1),
 #menu-desktop div a:nth-child(2){
-    color: #000;
+    color: #606060;
+    font-weight:500;
 }
 #menu-desktop div a:nth-child(3){
     color: #0065FC;
@@ -79,7 +80,7 @@ button{
 #menu-desktop div:nth-child(2) a:nth-child(1):before,
 #menu-desktop div:nth-child(2) a:nth-child(2):before{
     transform: scaleX(0);
-    height: 2px;
+    height: 1.9px;
     content: '';
     border-radius: 20px;
     background-color: #0065FC;
