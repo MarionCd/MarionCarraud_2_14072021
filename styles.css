@@ -914,3 +914,9 @@ footer #marge{
         padding:0px;
     }
 }
+
+@media all and (min-width:1600px){
+    .liste{
+        justify-content:space-around;
+    }
+}
