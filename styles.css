@@ -785,10 +785,7 @@ footer #marge{
         justify-content: space-around;
     }
 
-    .populaires__legende .prix{
-        padding-top:5px;
-        padding-bottom:10px;
-    }
+    
     .etoiles{
         font-size:12px;
     }
