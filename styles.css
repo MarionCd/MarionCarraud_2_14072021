@@ -751,14 +751,15 @@ footer #marge{
         margin-bottom:-8px;
         
     }
+    footer div:nth-child(1),footer div:nth-child(2),footer div:nth-child(3){
+        width:30%;
+    }
     
     footer .marge{
         display:none;
     }
 
 }
-
-
 
 @media all and (max-width:374px){
     .recherche__barre{
@@ -794,6 +795,7 @@ footer #marge{
         font-size:12px;
     }
 }
+
 @media all and (min-width:720px) and (max-width:1024px){
     #filtres{
         justify-content: flex-start;
@@ -867,8 +869,7 @@ footer #marge{
 
 }
 
-
-@media all and (min-width:1025px){
+@media all and (min-width:1025px) {
     body{
         margin: 0px 50px;
     }
