@@ -120,7 +120,11 @@ button{
     flex-direction: row;
     justify-content: center;
     height:35px;
+    margin-left: -8px;
+    margin-right:-8px;
+
 }
+
 
 #mobile__nav2 a{
     width:50%;
@@ -568,12 +572,17 @@ footer #marge{
     #menu-desktop{
         display:none;
     }
+
+    h1{
+        font-size:18px;
+    }
+
     h3{
         font-size:14px;
     }
 
     #recherche{
-        margin-top:35px;
+        margin-top:25px;
         margin-right:20px;
         margin-left:20px;
     }
