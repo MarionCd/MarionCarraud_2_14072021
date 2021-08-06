@@ -173,6 +173,10 @@ button{
     font-size:17px;
 }
 
+.recherche__barre input:focus{
+    border:none;
+}
+
 .recherche__barre button{
     width:140px;
     height:100%;
