@@ -231,8 +231,13 @@ button{
     line-height: 3;
     color:#0065FC;
 }
+#filtres .choix:hover {
+    color:#0065FC;
+    background-color: #DEEBFF;
+    transition-duration:2000ms;
+}
 
-#filtres i:hover{
+#filtres .choix:hover i{
     background-color:#0065FC;
     color: #DEEBFF;
     transition-duration:2000ms;
