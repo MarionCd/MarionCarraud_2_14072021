@@ -611,7 +611,6 @@ footer #marge{
     #populaires,
     #logements{
         width:auto;
-        padding-bottom:25px;
         margin-right:-8px;
         margin-left:-8px;
     }
@@ -644,6 +643,9 @@ footer #marge{
         width:100%;
     }
 
+    #populaires{
+        padding-bottom:25px;
+    }
     #populaires__titre{
         align-items:baseline;
     }
