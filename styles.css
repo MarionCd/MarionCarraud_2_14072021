@@ -608,9 +608,12 @@ footer #marge{
     #hebergements h2{
         padding-left:20px;
     }
-    #populaires{
-        width:100%;
+    #populaires,
+    #logements{
+        width:auto;
         padding-bottom:25px;
+        margin-right:-8px;
+        margin-left:-8px;
     }
     #populaires__titre i{
         padding-right:20px;
@@ -626,7 +629,6 @@ footer #marge{
         padding-bottom:25px;
     }
     #logements{
-        width:100%;
         background-color:#fff;
     }
     .liste{
@@ -674,8 +676,12 @@ footer #marge{
 
     #activites{
         margin-top:50px;
-        margin-right:20px;
-        margin-left:20px;
+    }
+    #activites h2,
+    #galerie{
+        margin-left:-8px;
+        margin-right:-8px;
+        padding:0px 20px;
     }
     #galerie{
         flex-direction: column;
@@ -726,8 +732,7 @@ footer #marge{
         width:auto;
         flex-direction:column;
         padding: 30px 80px 30px 80px;
-        margin-left:0px;
-        margin-right:0px;
+        margin-right:-8px;
         
     }
     
@@ -750,7 +755,7 @@ footer #marge{
 
     .recherche__barre input{
         width:160px;
-        height:26px;
+        height:27px;
     }
 
     .recherche__barre i,
