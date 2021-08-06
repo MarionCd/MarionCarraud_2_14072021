@@ -131,6 +131,7 @@ button{
 #mobile__nav2 a:hover,
 #mobile__nav2 a:active{
     border-bottom:3px solid #0065FC;
+    color:#0065FC;
 }
 
 /***********************************Barre de recherche*********************************************/
