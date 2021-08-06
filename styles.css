@@ -397,7 +397,6 @@ button{
 .populaires__carte a{
     display:flex;
     flex-direction: row;
-/*    justify-content: space-between;*/
 }
 .populaires__vignette{
     height:140px;
@@ -920,7 +919,8 @@ footer #marge{
         justify-content:space-around;
     }
     #populaires,
-    #logements{
+    #logements,
+    #menu-desktop div:nth-child(2){
         width:45%;
     }
     .populaires__carte,
@@ -937,34 +937,7 @@ footer #marge{
     .logements__image{
         background-position: 50% 60%;
     }
-    #galerie .galerie__carte-mobile{
-        height:290px;
-    }
-    .galerie__carte-mobile a div:nth-child(1),
-    #pomegues,
-    #frioul,
-    #ndgarde,
-    #longchamp{
-        height:232px;
-    }
-    #vieux-port{
-        background-image: url('./images/activites/2_large/Vieux-port.jpg');
-    }
-    #pomegues{
-        background-image: url('./images/activites/2_large/Pomegues.jpg');
-    }
-    #frioul{
-        background-image: url('./images/activites/2_large/Iles-du-Frioul.jpg');
-    }
-    #ndgarde{
-        background-image: url('./images/activites/2_large/notre-dame-de-la-garde.jpg');
-    }
-    #calanques{
-        background-image: url('./images/activites/2_large/Calanques.jpg');
-    }
-    #longchamp{
-        background-image: url('./images/activites/2_large/Longchamp.jpg');
-    }
+    
 
     #cannebiere{
         background-image: url('./images/hebergements/3_medium/Auberge_la_Cannebiere.jpg');
